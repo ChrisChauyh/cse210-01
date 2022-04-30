@@ -38,11 +38,13 @@ namespace cse210_01
             if(whowins ==1)
             {
                 Board();
+                win();
                 Console.WriteLine("Congrats Player 1!");
             }
             else if(whowins ==2)
             {
                 Board();
+                win();
                 Console.WriteLine("Congrats Player 2!");
             }
             else
@@ -137,9 +139,20 @@ namespace cse210_01
                 return 0;
             }
         }
-    
+        public static void win()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("  ÛÛÛÛÛ   ÛÛÛ   ÛÛÛÛÛ                     ÛÛÛ   ");
+            Console.WriteLine(" °°ÛÛÛ   °ÛÛÛ  °°ÛÛÛ                     °ÛÛÛ    ");
+            Console.WriteLine("  °ÛÛÛ   °ÛÛÛ   °ÛÛÛ   ÛÛÛÛÛÛ  ÛÛÛÛÛÛÛÛ  °ÛÛÛ    ");
+            Console.WriteLine("  °ÛÛÛ   °ÛÛÛ   °ÛÛÛ  ÛÛÛ°°ÛÛÛ°°ÛÛÛ°°ÛÛÛ °ÛÛÛ    ");
+            Console.WriteLine("  °°ÛÛÛ  ÛÛÛÛÛ  ÛÛÛ  °ÛÛÛ °ÛÛÛ °ÛÛÛ °ÛÛÛ °ÛÛÛ    ");
+            Console.WriteLine("   °°°ÛÛÛÛÛ°ÛÛÛÛÛ°   °ÛÛÛ °ÛÛÛ °ÛÛÛ °ÛÛÛ  °°°    ");
+            Console.WriteLine("     °°ÛÛÛ °°ÛÛÛ     °°ÛÛÛÛÛÛ  ÛÛÛÛ ÛÛÛÛÛ ÛÛÛ    ");
+            Console.WriteLine("       °°°   °°°       °°°°°°  °°°° °°°°° °°°    ");
+            Console.ResetColor();
+        } 
     }
-
 }
 
            
